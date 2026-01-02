@@ -14,6 +14,7 @@ let
   # defers type merging to the elemType
   elemTypeFunctor = type: name: payload: {
     inherit payload type name;
+    wrapped = null;
     binOp =
       a: b:
       let
